@@ -5,10 +5,11 @@ on:
       name: 
         description: Enter the name
         required: true
+        default: "guest
         type: string
  jobs:
    greetings:
-     runs_on: ubuntu:lates
+     runs_on: ubuntu-latest
      steps:
        - name: Greeting message
          run: echo "Hi ${{ inputs.name }} Welcome"
