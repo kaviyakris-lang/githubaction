@@ -20,4 +20,4 @@ jobs:
           context: .
           file: ./.github/workflows/Dockerfile
           push: true
-          tags: user/web:latest
+          tags: kaviya0309/web:latest
