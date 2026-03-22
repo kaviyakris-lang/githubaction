@@ -19,6 +19,7 @@ jobs:
       - name: build and push the image
         uses: docker/build-push-action@v4
         with:
-          context: /githubaction/.github/workflows/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: nginx-web:latest
