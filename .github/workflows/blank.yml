@@ -6,6 +6,11 @@ on:
         description: choose the env
         required: true
         default: dev
+        type: choice
+        options:
+          - dev
+          - test
+          - prod
 jobs:
   build:
     runs-on: ubuntu-latest
