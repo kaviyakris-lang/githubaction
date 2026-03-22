@@ -1,5 +1,5 @@
 name: demo jobs
-  on: workflow_display
+  on: workflow_dispatch
   jobs:
     build:
       steps:
