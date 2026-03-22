@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: build 
-        run: echo "build is working"
+        run: echo "build is working as expected"
   deploy:
     if: github.ref_name == 'main' && github.event_name == 'push'
     runs-on: ubuntu-22.04
