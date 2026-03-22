@@ -20,3 +20,4 @@ jobs:
            echo "My name is ${{ vars.NAME }}"
            echo "I am working in TCS"
            echo "deploy app in ${{ inputs.environment}}"
+           echo "${{ toJson(github) }}"
