@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: deploy
-        run: echo "deploy is working"
+        run: echo "deploy is working as expected"
