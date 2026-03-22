@@ -5,19 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: enter the name
-         run: echo "My name is Kaviya"
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: test the app
-        run: echo "test the app"
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: deploy the app
-        run: echo "deploying the app"
-    
-    
-   
+         run: |
+           echo "My name is Kaviya"
+           echo "I am working in TCS"
