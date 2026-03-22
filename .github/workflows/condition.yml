@@ -1,0 +1,16 @@
+name: condition testing
+on:
+  push
+jobs:
+  build:
+    if: github.ref_name == 'feature/condition' && github.event_name == 'push'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: build 
+        run: echo "build is working"
+  deploy:
+    if: github.ref_name == 'main' && github.event_name == 'pull'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: deploy
+        run: echo "deploy is working"
