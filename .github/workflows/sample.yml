@@ -1,0 +1,13 @@
+name: nginx
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v4
+      - name: build docker image
+        run: docker run -t nginx-web .
