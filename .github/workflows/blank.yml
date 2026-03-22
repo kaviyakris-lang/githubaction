@@ -2,7 +2,8 @@ name: demo jobs
 on: push
 jobs:
   build:
-     steps:
+    runs-on: ubuntu-latest
+    steps:
        - name: enter the name
          run: echo "My name is Kaviya"
     
