@@ -4,4 +4,4 @@ jobs:
   call-greetings:
     uses: ./.github/workflows/reusable.yml
     with:
-      name: "Kaviya"
+      name: "Kaviya C"
