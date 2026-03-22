@@ -1,5 +1,10 @@
 name: demo jobs
-on: push
+on: workflow_dispatch
+  inputs:
+    environment:
+      description: choose the env
+      required: true
+      default: dev
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,4 +13,4 @@ jobs:
          run: |
            echo "My name is ${{ vars.NAME }}"
            echo "I am working in TCS"
-           echo "My password is ${{ secrets.PASSWORD }}"
+           echo "deploy app in ${{ inputs.environment}}"
