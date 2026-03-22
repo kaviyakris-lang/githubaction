@@ -6,5 +6,5 @@ jobs:
     steps:
        - name: enter the name
          run: |
-           echo "My name is Kaviya"
+           echo "My name is ${{ var.NAME }}"
            echo "I am working in TCS"
