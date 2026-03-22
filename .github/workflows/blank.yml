@@ -6,6 +6,12 @@ jobs:
     steps:
        - name: enter the name
          run: echo "My name is Kaviya"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the app
+        run: echo "deloy the app"
     
     
    
