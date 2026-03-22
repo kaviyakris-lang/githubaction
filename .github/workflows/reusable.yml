@@ -1,0 +1,14 @@
+name: reuse
+on: 
+  workflow_call:
+    inputs:
+      name: 
+        description: Enter the name
+        required: true
+        type: string
+ jobs:
+   greetings:
+     runs_on: ubuntu:lates
+     steps:
+       - name: Greeting message
+         run: echo "Hi ${{ inputs.name }} Welcome"
