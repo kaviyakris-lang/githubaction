@@ -6,12 +6,18 @@ jobs:
     steps:
        - name: enter the name
          run: echo "My name is Kaviya"
-  deploy:
+  test:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: test the app
+        run: echo "test the app"
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
       - name: deploy the app
-        run: echo "deloy the app"
+        run: echo "deploying the app"
     
     
    
