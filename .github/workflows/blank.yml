@@ -1,4 +1,4 @@
-name: demo jobs:
+name: demo jobs
   on: workflow_display
   jobs:
     build:
