@@ -1,5 +1,6 @@
 name: demo jobs
-  on: push
+  on: 
+    push
   jobs:
     build:
       steps:
