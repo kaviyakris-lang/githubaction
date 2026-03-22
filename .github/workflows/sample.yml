@@ -15,11 +15,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: build docker image
-        uses: docker/setup-buildx-action@v3
-      - name: build and push the image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: nginx-web:latest
+        run: docker build -t web:latest -f ./.github/workflows/Dockerfile .
