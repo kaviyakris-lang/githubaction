@@ -1,0 +1,8 @@
+name: CICD
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the name
+        run: echo "My name is kaviya"
